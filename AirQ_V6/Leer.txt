@@ -1,0 +1,11 @@
+Actualizacion de V5
+Modificacion de codigo, se actualizaron librerías y tuve que cambiar métodos del timer. Funciona V5. Se tuvo que borrar la parte de JSON, en V6 se va hacer eso, la comunicación con la pantalla y deberíamos terminar la integración..
+Este codigo hará lo siguiente:
+	-Mediante interrupciones por tiempo
+		-leer todos los sensorees y actualizar el valor del vector
+		-Mostrar el valor actual del vector completo
+		-Cargar en la base de datos los valores leidos
+		-Cargar en la pantalla los valores leidos
+	-Mediante ordenes por puerto serie2
+		-Cargar en la pantalla los valores leidos (pasarlos al arduino)
+	_Implementación de Watchdog, si no inicializa sensores, se reinicia
